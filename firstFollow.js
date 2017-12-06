@@ -1,6 +1,6 @@
 //Exemplo de Gramatica
 var grama = {1:"S -> F",        //S -> F
-			2:"S -> (S+F)",     //S -> (S+F)
+		2:"S -> (S+F)",     //S -> (S+F)
 			3:"F -> a"};		//F -> a
 			
 //Entrada com os Terminais
@@ -42,18 +42,21 @@ function first(){
 	for(i in grama){
 		var aux = grama[i];
 		for(j in terminais){
-			if(aux[5] == terminais[j]){
+			var aux2 = aux.split(" ");
+			var aux3 = aux2[2].substring(0,1);
+			if(aux3 == terminais[j]){
 				console.log(aux[0],": ",terminais[j]);
 			}
 		}
 		for(j in naoTerminais){
-			if(aux[5] == naoTerminais[j]){
+			var aux2 = aux.split(" ");
+			var aux3 = aux2[2].substring(0,1);
+			if(aux3 ==  naoTerminais[j]){
 				console.log(aux[0],": ",naoTerminais[j]);
 			}
 		}
 	}
 }
-
 //Imprime os Firts
 first();
 
