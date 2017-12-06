@@ -1,16 +1,17 @@
 //Exemplo de Gramatica
-var grama = {1:"S -> F",        //S -> F
-			2:"S -> (S+F)",     //S -> (S+F)
-			3:"F -> a"};		//F -> a
+var grama = {1:"A -> BCy", 
+	     2:"B -> CzD", 
+       	     3:"C -> xy",
+	     4:"D -> yzA"};
 			
 //Entrada com os Terminais
-var terminais = ["S", "F"];
+var terminais = ["A", "B", "C", "D"];
 
 //Entrada com os Não Terminais
-var naoTerminais = ["(", "+", "a"];
+var naoTerminais = ["y", "z", "x"];
 
 //Entrada do Estado Inicial
-var inicial = "S";
+var inicial = "A";
 
 //Imprime Gramatica
 function imprime(){
@@ -37,8 +38,10 @@ function mostra(A){
 }
 
 //Teste de impressao das producoes
-mostra("S");
-mostra("F");
+mostra("A");
+mostra("B");
+mostra("C");
+mostra("D");
 
 //First
 function first(){
