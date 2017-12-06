@@ -1,7 +1,7 @@
 # FirstFollow
 
-Aluno: Murilo Gustavo
-       Taynar Sousa 
+Alunos: Murilo Gustavo
+        Taynar Sousa 
 
 Construção de um analisador LL
 
