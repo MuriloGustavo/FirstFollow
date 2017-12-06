@@ -1,5 +1,8 @@
 # FirstFollow
 
+Aluno: Murilo Gustavo
+       Taynar Sousa 
+
 Construção de um analisador LL
 
 Deve se entra uma gramativa com por exemplo:
