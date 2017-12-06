@@ -87,7 +87,16 @@ function follow(){
 			for(var j = 0; j+1 < aux5; j++){
 				for(k in terminais){
 					if(aux4.substring(j,j+1) == terminais[k]){
-						console.log(aux4.substring(j,j+1), " :", "First(", aux4.substring(j+1,j+2), ")");
+						for(l in naoTerminais){
+							if(aux4.substring(j+1,j+2 == naoTerminais[l])){
+								console.log(aux4.substring(j,j+1), " :", aux4.substring(j+1,j+2));
+							}
+						}
+					}
+					if(aux4.substring(j,j+1) == terminais[k]){
+						if(aux4.substring(j+1,j+2) == terminais[k]){
+							console.log(aux4.substring(j,j+1), " :", "First(", aux4.substring(j+1,j+2), ")");
+						}
 					}
 				}
 			}
