@@ -66,20 +66,6 @@ function first(){
 //Imprime os Firts
 first();
 
-/*/Follow
-function follow(){
-	console.log('Follow:\n');
-	console.log(inicial, " :", "$");
-	for(i in grama){
-		var aux = grama[i];
-		for(j in aux){
-			
-		}
-		console.log("Tá Phoda ",i);
-	}
-	console.log('');
-}*/
-
 //Follow
 function follow(){
 	console.log('Follow:\n');
