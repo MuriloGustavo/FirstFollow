@@ -5,9 +5,7 @@ Construção de um analisador LL
 Deve se entra uma gramativa com por exemplo:
 
 //Exemplo de Gramatica
-var grama = {1:"S -> F",      //S -> F
-			      2:"S -> (S+F)",   //S -> (S+F)
-			      3:"F -> a"};		  //F -> a
+var grama = {1:"S -> F", 2:"S -> (S+F)", 3:"F -> a"};
             
 Com um conjunto de Terminais
 
